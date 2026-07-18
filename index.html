@@ -46,11 +46,11 @@
     <!-- MAIN CONTAINER -->
     <main class="max-w-6xl mx-auto px-4 py-8">
         
-        <!-- SECTION 1: VIDEO TUTORIAL FIRST (বড় ও স্পষ্ট স্ক্রিন) -->
+        <!-- SECTION 1: FIRST VIDEO TUTORIAL (সবার উপরে বড় স্ক্রিন) -->
         <section class="mb-12">
             <div class="bg-white rounded-3xl shadow-xl p-4 md:p-8 border border-slate-200/80">
                 <div class="text-center max-w-2xl mx-auto mb-6">
-                    <span class="bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">টিউটোরিয়াল গাইড</span>
+                    <span class="bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">টিউটোরিয়াল গাইড (১)</span>
                     <h2 class="text-2xl font-bold text-slate-900 mt-2 flex items-center justify-center gap-2">
                         <i class="fa-brands fa-youtube text-red-600 text-3xl"></i> সংবাদ আপলোডের সম্পূর্ণ ভিডিও টিউটোরিয়াল
                     </h2>
@@ -59,21 +59,26 @@
                 
                 <!-- Large & Clear Embedded Video Player -->
                 <div class="aspect-video w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-black border-4 border-slate-900">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/nTB28qtbwdk" title="Janatar Online Press Club Video Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/nTB28qtbwdk" title="Janatar Online Press Club Video Tutorial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 
-                <!-- Immediate Call to Action Box -->
-                <div class="mt-8 text-center bg-slate-50 p-6 rounded-2xl border border-slate-100 max-w-3xl mx-auto">
-                    <p class="text-slate-700 mb-4 font-semibold text-base">এই নির্দেশিকায় আপনি মূলত ৪টি গুরুত্বপূর্ণ বিষয় জানতে পারবেন:</p>
-                    <div class="flex flex-wrap justify-center gap-2 text-xs md:text-sm text-slate-600 mb-6">
-                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-pen-to-square text-indigo-500 mr-1"></i> কীভাবে সংবাদ প্রকাশ করবেন</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-user-check text-emerald-500 mr-1"></i> অ্যাকাউন্ট ভেরিফিকেশন তথ্য</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-screwdriver-wrench text-amber-500 mr-1"></i> সাধারণ সমস্যার সমাধান</span>
-                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-clipboard-question text-purple-500 mr-1"></i> গুরুত্বপূর্ণ প্রশ্নের উত্তর</span>
-                    </div>
-                    <a href="https://www.jonotaronlinepresscloub.com/signin/" target="_blank" class="inline-flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-xl text-lg shadow-lg transition-all transform hover:-translate-y-0.5">
-                        <i class="fa-solid fa-right-to-bracket"></i> সরাসরি লগইন/নিবন্ধন লিংকে যান
+                <!-- Action Buttons right below the video -->
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-4xl mx-auto">
+                    <!-- YouTube Direct Link -->
+                    <a href="https://youtu.be/nTB28qtbwdk?si=0BV6ZuHV3gX8ez3O" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-rose-100 hover:bg-rose-200 text-rose-700 font-bold py-3.5 px-6 rounded-xl text-base border border-rose-200 transition-all shadow-sm">
+                        <i class="fa-brands fa-youtube text-xl"></i> সরাসরি ইউটিউবে দেখতে এখানে ক্লিক করুন
                     </a>
+                    <!-- Portal Login Link -->
+                    <a href="https://www.jonotaronlinepresscloub.com/signin/" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-8 rounded-xl text-base shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-right-to-bracket"></i> এখন লগইন সম্পন্ন করুন
+                    </a>
+                </div>
+
+                <div class="mt-8 text-center bg-slate-50 p-4 rounded-xl border border-slate-100 max-w-3xl mx-auto text-xs md:text-sm text-slate-600 flex flex-wrap justify-center gap-2">
+                    <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-pen-to-square text-indigo-500 mr-1"></i> সংবাদ প্রকাশ পদ্ধতি</span>
+                    <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-user-check text-emerald-500 mr-1"></i> ভেরিফিকেশন তথ্য</span>
+                    <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-screwdriver-wrench text-amber-500 mr-1"></i> সমস্যার সমাধান</span>
+                    <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200"><i class="fa-solid fa-clipboard-question text-purple-500 mr-1"></i> গুরুত্বপূর্ণ প্রশ্নোত্তর</span>
                 </div>
             </div>
         </section>
@@ -93,7 +98,7 @@
                         <h3 class="text-2xl font-bold text-slate-900">📰 কীভাবে সংবাদ আপলোড করবেন?</h3>
                     </div>
 
-                    <!-- Steps Timeline/Progress line -->
+                    <!-- Steps Timeline -->
                     <div class="relative border-l-2 border-slate-100 pl-6 ml-4 space-y-8">
                         <!-- Step 1 -->
                         <div class="relative">
@@ -112,7 +117,7 @@
                         <!-- Step 3 -->
                         <div class="relative">
                             <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold flex items-center justify-center">৩</div>
-                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–৩: "নতুন সংবাদ" মেনু নির্বাচন (মোস্ট ইম্পর্ট্যান্ট)</h4>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–৩: "নতুন সংবাদ" মেনু নির্বাচন</h4>
                             <p class="text-slate-600 text-sm leading-relaxed">
                                 প্রথমে অ্যাকাউন্টে লগইন করে নিবেন। এরপর স্ক্রল করে <strong>একদম ওয়েবসাইটের নিচে (Footer) চলে আসবেন</strong>। সর্বশেষ ওয়েবসাইটের নিচে যেখানে ফেসবুক ও ইউটিউব এর লোগোগুলো রয়েছে, আপনি লগইন থাকা অবস্থায় ঠিক তার উপরে <span class="text-indigo-600 font-bold">"নতুন সংবাদ"</span> নামে যে লেখাটি আছে ওখানে ক্লিক করবেন। এটি আপনাকে সরাসরি সংবাদ প্রকাশের ঘরে নিয়ে যাবে।
                             </p>
@@ -143,7 +148,7 @@
                         <h3 class="text-2xl font-bold text-slate-900">❓ প্রায় জিজ্ঞাসিত প্রশ্ন (FAQ)</h3>
                     </div>
 
-                    <div class="space-y-4">
+                    <div class="space-y-4 mb-8">
                         <!-- Q1 -->
                         <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
                             <h5 class="font-bold text-slate-800 text-sm md:text-base">১. দৈনিক কয়টি সংবাদ প্রকাশ করা যাবে?</h5>
@@ -184,14 +189,14 @@
                             </p>
                         </div>
 
-                        <!-- Q6 - IMPORTANT LEGAL LEGAL NOTICE -->
+                        <!-- Q6 - IMPORTANT LEGAL NOTICE -->
                         <div class="border border-red-200 rounded-xl p-4 bg-red-50/50">
                             <h5 class="font-bold text-red-950 text-sm md:text-base flex items-center gap-2">
                                 <i class="fa-solid fa-triangle-exclamation text-red-600"></i> ৬. সংবাদ সংগ্রহ করতে গিয়ে সমস্যায় পড়লে কী করণীয়?
                             </h5>
                             <div class="text-slate-700 text-sm mt-2 pl-4 border-l-2 border-red-600">
                                 <p class="font-bold text-red-700 mb-1">সতর্কবার্তা ও সুনির্দিষ্ট উত্তর:</p>
-                                না, মাঠে গিয়ে পরিচয়পত্র সরাসরি যেকোনো জায়গায় প্রদর্শন করা যাবে না। আপনাকে যে পরিচয়পত্রটি প্রদান করা হয়েছে তা মূলত স্বাধীন বাংলা প্রেস ক্লাবের একটি প্রাতিষ্ঠানিক "সদস্যপদ (Membership) কার্ড"। এটি শুধুমাত্র ক্লাবের অভ্যন্তরীণ ও প্রাতিষ্ঠানিক সুযোগ-সুবিধা ও পরিচিতির জন্য প্রযোজ্য। মাঠপর্যায়ে বা মূল ধারায় পেশাদার সাংবাদিকতা করার ক্ষেত্রে দেশের প্রচলিত আইন, সম্প্রচার নীতিমালা ও সংশ্লিষ্ট সরকারি কর্তৃপক্ষের সুনির্দিষ্ট গাইডলাইন কঠোরভাবে মেনে চলতে হবে।
+                                না, মাঠে গিয়ে পরিচয়পত্র সরাসরি যেকোনো জায়গায় প্রদর্শন করা যাবে না। আপনাকে যে পরিচয়পত্রটি প্রদান করা হয়েছে তা মূলত স্বাধীন বাংলা প্রেস ক্লাবের একটি প্রাতিষ্ঠানিক "সদস্যপদ (Membership)カード"। এটি শুধুমাত্র ক্লাবের অভ্যন্তরীণ ও প্রাতিষ্ঠানিক সুযোগ-সুবিধা ও পরিচিতির জন্য প্রযোজ্য। মাঠপর্যায়ে বা মূল ধারায় পেশাদার সাংবাদিকতা করার ক্ষেত্রে দেশের প্রচলিত আইন, সম্প্রচার নীতিমালা ও সংশ্লিষ্ট সরকারি কর্তৃপক্ষের সুনির্দিষ্ট গাইডলাইন কঠোরভাবে মেনে চলতে হবে।
                             </div>
                         </div>
 
@@ -215,6 +220,18 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- SECTION 2: SECOND VIDEO TUTORIAL (FAQ এর নিচে অটোমেটিক চালুর রিপ্রেজেন্টেশন) -->
+                    <div class="mt-10 pt-8 border-t border-slate-100">
+                        <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-video text-indigo-600"></i> ভিডিও টিউটোরিয়াল (২) — নিচে পুনরায় প্লেয়ার
+                        </h4>
+                        <p class="text-slate-500 text-xs mb-4">সহজে খুঁজে পাওয়ার সুবিধার্থে এবং এআই সহায়কের সুবিধাজনক ডিরেকশনের জন্য এখানেও ভিডিওটি যুক্ত করা হয়েছে।</p>
+                        <div class="aspect-video w-full rounded-xl overflow-hidden shadow-md bg-black border border-slate-200">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/nTB28qtbwdk" title="Janatar Online Press Club Video Tutorial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
                 </section>
             </div>
 
@@ -252,7 +269,7 @@
                         <i class="fa-solid fa-headset text-indigo-400"></i> কোনো টেকনিক্যাল সমস্যা?
                     </h4>
                     <p class="text-slate-400 text-xs mb-5 leading-relaxed">
-                        সংবাদ আপলোড করতে বা প্রতিনিধি অ্যাকাউন্ট ব্যবহার করতে কোনো ধরনের সমস্যা হলে, আপনার নিবন্ধিত নাম, মোবাইল নম্বর এবং সমস্যার বিস্তারিত তথ্যসহ সরাসরি অফিশিয়াল ইমেইলে যোগাযোগ করুন।
+                        সংবাদ আপলো드를 করতে কোনো সমস্যা হলে, আপনার নিবন্ধিত নাম, মোবাইল নম্বর এবং সমস্যার বিস্তারিত তথ্যসহ নিচে উল্লেখ করা ইমেইল ঠিকানায় আমাদের জানান।
                     </p>
                     
                     <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-4 flex items-center gap-3">
@@ -275,8 +292,8 @@
     <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 text-center px-4 mt-12">
         <p class="mb-2">© 2026 জনতার অনলাইন প্রেসক্লাব পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
-        <p class="text-slate-500">ডিজাইন কোড: আধুনিক, রেসপন্সিভ ও সম্পূর্ণ সুরক্ষিত এডিশন</p>
+        <p class="text-slate-500">ডিজাইন কোড: ডাবল-ভিডিও ইন্টিগ্রেটেড আন্তর্জাতিক রেসপন্সিভ এডিশন</p>
     </footer>
 
 </body>
-    </html>
+</html>
