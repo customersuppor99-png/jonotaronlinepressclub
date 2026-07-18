@@ -17,220 +17,266 @@
 <body class="text-slate-800 antialiased">
 
     <!-- TOP ANNOUNCEMENT BANNER (WhatsApp Suspension Alert) -->
-    <div class="bg-gradient-to-r from-red-600 via-amber-600 to-red-600 text-white py-3 px-4 shadow-md sticky top-0 z-50 animate-pulse">
+    <div class="bg-gradient-to-r from-red-600 via-amber-600 to-red-600 text-white py-3 px-4 shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left text-sm font-medium">
             <div class="flex items-center gap-2 justify-center">
-                <i class="fa-solid fa-triangle-exclamation text-lg"></i>
-                <span><strong>জরুরি নোটিশ:</strong> প্রযুক্তিগত API সমস্যার কারণে আমাদের অফিসিয়াল WhatsApp অ্যাকাউন্ট সাময়িকভাবে সাসপেন্ড রয়েছে। চিন্তার কোনো কারণ নেই, আপনাদের সকল তথ্য আমাদের কাছে নিরাপদ আছে।</span>
+                <i class="fa-solid fa-triangle-exclamation text-lg animate-pulse"></i>
+                <span><strong>জরুরি নোটিশ:</strong> প্রযুক্তিগত API সমস্যার কারণে আমাদের অফিশিয়াল WhatsApp অ্যাকাউন্টগুলো সাময়িকভাবে সাসপেন্ড হয়েছে। তবে প্রতিটি সদস্যের ডাটা আমাদের কাছে নিরাপদ থাকায় আমরা নিয়মিত এসএমএস-এর মাধ্যমে আপডেট জানিয়ে দেবো।</span>
             </div>
-            <span class="bg-white/20 px-3 py-1 rounded-full text-xs border border-white/30 backdrop-blur-sm">নতুন আপডেট ইমেইলে পাঠানো হবে</span>
+            <span class="bg-white/20 px-3 py-1 rounded-full text-xs border border-white/30 backdrop-blur-sm">চিন্তিত হওয়ার কোনো প্রয়োজন নেই</span>
         </div>
     </div>
 
     <!-- HERO HEADER -->
-    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-16 px-4 text-center border-b-4 border-emerald-500 relative overflow-hidden">
+    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-12 px-4 text-center border-b-4 border-emerald-500 relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
         <div class="max-w-4xl mx-auto relative z-10">
-            <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 px-4 py-2 rounded-full text-emerald-400 text-sm mb-4 backdrop-blur-sm">
-                <i class="fa-solid fa-hand-holding-heart"></i> লাল গোলাপের শুভেচ্ছা ও আন্তরিক অভিনন্দন
+            <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 px-4 py-2 rounded-full text-emerald-400 text-sm mb-3">
+                <i class="fa-solid fa-hand-holding-heart"></i> লাল গোলাপের শুভেচ্ছা ও মন থেকে অভিনন্দন
             </div>
-            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-snug">
+            <h1 class="text-3xl md:text-5xl font-bold mb-3 leading-snug">
                 স্বাগতম, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 brand-font">জনতার অনলাইন প্রেসক্লাব</span>
             </h1>
-            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                সদস্যদের সুবিধার্থে সংবাদ প্রকাশ, অ্যাকাউন্ট ভেরিফিকেশন এবং যেকোনো প্রযুক্তিগত সমস্যার সহজ সমাধানের জন্য এই আধুনিক নির্দেশিকা পোর্টালটি তৈরি করা হয়েছে।
+            <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                নির্দেশনাগুলো দিতে প্রযুক্তিগত কারণে একটু লেট হওয়ার জন্য আমরা আন্তরিকভাবে দুঃখ প্রকাশ করছি। অনুগ্রহ করে নিচের নির্দেশনাগুলো মনোযোগ দিয়ে সম্পূর্ণ পড়ুন এবং বুঝুন।
             </p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
         
-        <!-- LEFT & CENTER COLUMNS: GUIDELINES & FAQ -->
-        <div class="lg:col-span-2 space-y-8">
-            
-            <!-- STEP BY STEP NEWS UPLOAD GUIDE -->
-            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
-                <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
-                    <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-slate-900">কীভাবে সংবাদ আপলোড করবেন?</h2>
+        <!-- SECTION 1: VIDEO TUTORIAL FIRST (বড় ও স্পষ্ট স্ক্রিন) -->
+        <section class="mb-12">
+            <div class="bg-white rounded-3xl shadow-xl p-4 md:p-8 border border-slate-200/80">
+                <div class="text-center max-w-2xl mx-auto mb-6">
+                    <span class="bg-red-50 text-red-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">টিউটোরিয়াল গাইড</span>
+                    <h2 class="text-2xl font-bold text-slate-900 mt-2 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-youtube text-red-600 text-3xl"></i> সংবাদ আপলোডের সম্পূর্ণ ভিডিও টিউটোরিয়াল
+                    </h2>
+                    <p class="text-slate-500 text-sm mt-1">প্রথমে নিচের ভিডিওটি সম্পূর্ণ স্ক্রিন করে মনোযোগ দিয়ে দেখুন, এরপর লগইন ধাপে এগিয়ে যান।</p>
                 </div>
-
-                <!-- Steps Progress Path -->
-                <div class="relative border-l-2 border-slate-100 pl-6 ml-4 space-y-8">
-                    <!-- Step 1 -->
-                    <div class="relative">
-                        <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center shadow-md shadow-indigo-200">১</div>
-                        <h3 class="text-lg font-bold text-slate-800 mb-1">নিবন্ধন ও লগইন</h3>
-                        <p class="text-slate-600 text-sm mb-3">আপনার নিবন্ধিত মোবাইল নম্বর ও পাসওয়ার্ড ব্যবহার করে পোর্টালে লগইন করুন।</p>
-                        <a href="https://www.jonotaronlinepresscloub.com/signin/" target="_blank" class="inline-flex items-center gap-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-xs font-bold px-4 py-2 rounded-lg transition-all border border-indigo-100">
-                            <i class="fa-solid fa-right-to-bracket"></i> লগইন/নিবন্ধন লিংক
-                        </a>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="relative">
-                        <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-emerald-500 text-white text-xs font-bold flex items-center justify-center shadow-md shadow-emerald-200">২</div>
-                        <h3 class="text-lg font-bold text-slate-800 mb-1">স্ট্যাটাস পরীক্ষা</h3>
-                        <p class="text-slate-600 text-sm">লগইন সম্পন্ন হওয়ার পর আপনার অ্যাকাউন্ট ভেরিফাইড হলে ড্যাশবোর্ডে স্পষ্ট অক্ষরে <span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-bold px-2 py-0.5 rounded border border-emerald-200">গণমাধ্যম কর্মী</span> লেখা দেখতে পাবেন।</p>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="relative">
-                        <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold flex items-center justify-center shadow-md shadow-amber-200">৩</div>
-                        <h3 class="text-lg font-bold text-slate-800 mb-1">"নতুন সংবাদ" অপশন খুঁজুন</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            প্রথমে ওয়েবসাইটে লগইন করুন। এরপর স্ক্রল করে <strong>একদম ওয়েবসাইটের নিচে (Footer)</strong> চলে আসুন। যেখানে ফেসবুক ও ইউটিউব লোগো রয়েছে, তার ঠিক নিচে লগইন থাকা অবস্থায় <span class="text-indigo-600 font-bold">"নতুন সংবাদ"</span> লেখা অপশনটি দেখতে পাবেন। সেখানে ক্লিক করুন।
-                        </p>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="relative">
-                        <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-purple-500 text-white text-xs font-bold flex items-center justify-center shadow-md shadow-purple-200">৪</div>
-                        <h3 class="text-lg font-bold text-slate-800 mb-1">তথ্য পূরণ ও প্রকাশ</h3>
-                        <p class="text-slate-600 text-sm">নতুন সংবাদ বাটনে ক্লিক করার পর সংবাদ প্রকাশের ফর্ম আসবে। সেখানে প্রয়োজনীয় তথ্য, শিরোনাম এবং বিবরণ দিয়ে সাবমিট করুন।</p>
-                    </div>
-
-                    <!-- Step 5 -->
-                    <div class="relative">
-                        <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center shadow-md shadow-teal-200">৫</div>
-                        <h3 class="text-lg font-bold text-slate-800 mb-1">ফটো কার্ড ও অন্যান্য সুবিধা</h3>
-                        <p class="text-slate-600 text-sm">সংবাদটি সফলভাবে প্রকাশিত হওয়ার পর আপনার সংবাদের আকর্ষণীয় ফটো কার্ড এবং অন্যান্য সুযোগ-সুবিধা স্বয়ংক্রিয়ভাবে সক্রিয় হবে।</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SMART COLLAPSIBLE FAQ SECTION -->
-            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
-                <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
-                    <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-circle-question"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-slate-900">প্রায় জিজ্ঞাসিত প্রশ্ন (FAQ)</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- Q1 -->
-                    <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50">
-                        <h4 class="font-bold text-slate-800 flex items-start gap-2 text-base">
-                            <span class="text-indigo-600 font-extrabold">১.</span> দৈনিক কয়টি সংবাদ প্রকাশ করা যাবে?
-                        </h4>
-                        <p class="text-slate-600 text-sm mt-2 pl-5 border-l-2 border-indigo-500">
-                            একজন গণমাধ্যম কর্মী প্রতিদিন সর্বোচ্চ ২–৩টি সংবাদ প্রকাশ করতে পারবেন। প্রয়োজন অনুযায়ী কর্তৃপক্ষ এই নীতিমালা পরিবর্তন করতে পারে।
-                        </p>
-                    </div>
-
-                    <!-- Q2 -->
-                    <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50">
-                        <h4 class="font-bold text-slate-800 flex items-start gap-2 text-base">
-                            <span class="text-indigo-600 font-extrabold">২.</span> আমার অ্যাকাউন্ট এখনো ভেরিফাই হয়নি কেন?
-                        </h4>
-                        <p class="text-slate-600 text-sm mt-2 pl-5 border-l-2 border-emerald-500">
-                            চিন্তার কোনো কারণ নেই। সাধারণত ২৪ থেকে ৭২ ঘণ্টার মধ্যে আপনার অ্যাকাউন্টটি আমাদের টিম ম্যানুয়ালি এবং সিস্টেমে স্বয়ংক্রিয়ভাবে ভেরিফাই করে দেবে।
-                        </p>
-                    </div>
-
-                    <!-- Q3 -->
-                    <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50">
-                        <h4 class="font-bold text-slate-800 flex items-start gap-2 text-base">
-                            <span class="text-indigo-600 font-extrabold">৩.</span> পাসওয়ার্ড ভুলে গেলে কী করণীয়?
-                        </h4>
-                        <p class="text-slate-600 text-sm mt-2 pl-5 border-l-2 border-amber-500">
-                            ওয়েবসাইটের নিচে দেওয়া আমাদের অফিসিয়াল ই-মেইল ঠিকানায় আপনার নিবন্ধিত নাম, মোবাইল নম্বরসহ বিস্তারিত লিখে মেইল করুন। ভেরিফিকেশন শেষে টিম আপনাকে নতুন পাসওয়ার্ড সেট করতে সাহায্য করবে।
-                        </p>
-                    </div>
-
-                    <!-- Q4 -->
-                    <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/50">
-                        <h4 class="font-bold text-slate-800 flex items-start gap-2 text-base">
-                            <span class="text-indigo-600 font-extrabold">৪.</span> মাঠপর্যায়ে পরিচয়পত্র ব্যবহার করে সরাসরি সংবাদ সংগ্রহ করা যাবে কি?
-                        </h4>
-                        <p class="text-slate-600 text-sm mt-2 pl-5 border-l-2 border-red-500 bg-red-50/50 p-3 rounded-lg text-rose-950 font-medium">
-                            <strong class="text-red-700"><i class="fa-solid fa-circle-exclamation"></i> গুরুত্বপূর্ণ সতর্কবার্তা:</strong> না, সরাসরি প্রেস ক্লাবের কার্ড সাংবাদিক হিসেবে সর্বত্র প্রদর্শন করা যাবে না। আপনাকে যে পরিচয়পত্রটি দেওয়া হয়েছে তা মূলত "স্বাধীন বাংলা প্রেস ক্লাব"-এর একটি প্রাতিষ্ঠানিক "সদস্যপদ (Membership) কার্ড"। এটি শুধুমাত্র ক্লাবের অভ্যন্তরীণ ও প্রাতিষ্ঠানিক পরিচিতির জন্য প্রযোজ্য। মাঠপর্যায়ে সাংবাদিকতার ক্ষেত্রে দেশের প্রচলিত আইন, সম্প্রচার নীতিমালা ও সংশ্লিষ্ট সরকারি কর্তৃপক্ষের সুনির্দিষ্ট গাইডলাইন কঠোরভাবে মেনে চলতে হবে।
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- RIGHT COLUMN: VIDEO, AI HELPER & CONTACT -->
-        <div class="space-y-8">
-            
-            <!-- VIDEO TUTORIAL CARD -->
-            <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-2xl shadow-lg p-6 relative overflow-hidden group">
-                <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-white/5 rounded-full blur-xl group-hover:scale-125 transition-all"></div>
-                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
-                    <i class="fa-brands fa-youtube text-red-500 text-2xl"></i> ভিডিও টিউটোরিয়াল
-                </h3>
-                <p class="text-indigo-200 text-sm mb-4">সংবাদ আপলোডের সম্পূর্ণ প্রক্রিয়াটি প্রফেশনাল ভিডিও গাইডের মাধ্যমে লাইভ স্ক্রিনে দেখে নিন।</p>
                 
-                <!-- Video Link Button -->
-                <a href="https://youtu.be/nTB28qtbwdk?si=0BV6ZuHV3gX8ez3O" target="_blank" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-play"></i> টিউটোরিয়াল ভিডিওটি দেখুন
-                </a>
+                <!-- Large & Clear Embedded Video Player -->
+                <div class="aspect-video w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-black border-4 border-slate-900">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/nTB28qtbwdk" title="Janatar Online Press Club Video Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Immediate Call to Action Box -->
+                <div class="mt-8 text-center bg-slate-50 p-6 rounded-2xl border border-slate-100 max-w-3xl mx-auto">
+                    <p class="text-slate-700 mb-4 font-semibold text-base">এই নির্দেশিকায় আপনি মূলত ৪টি গুরুত্বপূর্ণ বিষয় জানতে পারবেন:</p>
+                    <div class="flex flex-wrap justify-center gap-2 text-xs md:text-sm text-slate-600 mb-6">
+                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-pen-to-square text-indigo-500 mr-1"></i> কীভাবে সংবাদ প্রকাশ করবেন</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-user-check text-emerald-500 mr-1"></i> অ্যাকাউন্ট ভেরিফিকেশন তথ্য</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-screwdriver-wrench text-amber-500 mr-1"></i> সাধারণ সমস্যার সমাধান</span>
+                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm"><i class="fa-solid fa-clipboard-question text-purple-500 mr-1"></i> গুরুত্বপূর্ণ প্রশ্নের উত্তর</span>
+                    </div>
+                    <a href="https://www.jonotaronlinepresscloub.com/signin/" target="_blank" class="inline-flex items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-xl text-lg shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-right-to-bracket"></i> সরাসরি লগইন/নিবন্ধন লিংকে যান
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <!-- SMART INTERACTIVE AI ASSISTANT PANEL -->
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 relative">
-                <div class="absolute top-4 right-4 flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-ping"></span>
-                    <span class="text-xs text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded-full">Active</span>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-robot text-indigo-600"></i> স্মার্ট এআই (AI) সহায়তাকারী
-                </h3>
-                <p class="text-slate-500 text-xs mb-4">আপনার যেকোনো সমস্যা বুঝতে এআই আপনাকে সরাসরি ভয়েস ও চ্যাটের মাধ্যমে গাইড করবে।</p>
+        <!-- TWO COLUMN LAYOUT FOR STEP GUIDE & FAQ -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- LEFT & CENTER: NEWS UPLOAD STEPS & FAQ -->
+            <div class="lg:col-span-2 space-y-8">
                 
-                <!-- Mock AI Prompt Box -->
-                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100 text-xs">
-                    <div class="flex gap-2 items-start">
-                        <div class="bg-indigo-600 text-white p-1.5 rounded-lg text-[10px]"><i class="fa-solid fa-robot"></i></div>
-                        <div class="bg-white p-2.5 rounded-xl shadow-sm text-slate-700 border border-slate-100">
-                            "ভাই, লগইন করতে কোন সমস্যা হচ্ছে কি? আর একবার ভালো করে তথ্যগুলো দেখুন। সম্পূর্ণ বোঝার জন্য ভিডিওটি ফুল স্ক্রিন করে দেওয়া হলো।"
+                <!-- HOW TO UPLOAD NEWS (STEP-BY-STEP) -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">📰 কীভাবে সংবাদ আপলোড করবেন?</h3>
+                    </div>
+
+                    <!-- Steps Timeline/Progress line -->
+                    <div class="relative border-l-2 border-slate-100 pl-6 ml-4 space-y-8">
+                        <!-- Step 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">১</div>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–১: পোর্টালে লগইন</h4>
+                            <p class="text-slate-600 text-sm">আপনি যে মোবাইল নম্বর ও তথ্য দিয়ে নিবন্ধন করেছিলেন, সেই তথ্য ব্যবহার করে আপনার অ্যাকাউন্টে লগইন সম্পন্ন করুন।</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-emerald-500 text-white text-xs font-bold flex items-center justify-center">২</div>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–২: স্ট্যাটাস যাচাইকরণ</h4>
+                            <p class="text-slate-600 text-sm">লগইন সফলভাবে সম্পন্ন হওয়ার পর আপনার অ্যাকাউন্ট যদি ভেরিফাইড হয়ে থাকে, তবে সেখানে স্পষ্ট আকারে <span class="bg-emerald-50 text-emerald-700 font-bold px-2 py-0.5 rounded border border-emerald-100 text-xs">"গণমাধ্যম কর্মী"</span> লেখাটি দেখতে পাবেন।</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative">
+                            <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold flex items-center justify-center">৩</div>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–৩: "নতুন সংবাদ" মেনু নির্বাচন (মোস্ট ইম্পর্ট্যান্ট)</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                প্রথমে অ্যাকাউন্টে লগইন করে নিবেন। এরপর স্ক্রল করে <strong>একদম ওয়েবসাইটের নিচে (Footer) চলে আসবেন</strong>। সর্বশেষ ওয়েবসাইটের নিচে যেখানে ফেসবুক ও ইউটিউব এর লোগোগুলো রয়েছে, আপনি লগইন থাকা অবস্থায় ঠিক তার উপরে <span class="text-indigo-600 font-bold">"নতুন সংবাদ"</span> নামে যে লেখাটি আছে ওখানে ক্লিক করবেন। এটি আপনাকে সরাসরি সংবাদ প্রকাশের ঘরে নিয়ে যাবে।
+                            </p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="relative">
+                            <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-purple-500 text-white text-xs font-bold flex items-center justify-center">৪</div>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–৪: প্রয়োজনীয় তথ্য পূরণ</h4>
+                            <p class="text-slate-600 text-sm">লোগোর নিচে অবস্থিত "নতুন সংবাদ আপলোড" বাটনে ক্লিক করে প্রয়োজনীয় তথ্যের ঘরগুলো সঠিকভাবে পূরণ করুন এবং প্রাতিষ্ঠানিক নির্দেশনা অনুযায়ী আপনার সংবাদটি প্রকাশ করুন।</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="relative">
+                            <div class="absolute -left-[35px] top-0 w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center">৫</div>
+                            <h4 class="text-base font-bold text-slate-800 mb-1">ধাপ–৫: ফটো কার্ড ও অতিরিক্ত সুবিধা</h4>
+                            <p class="text-slate-600 text-sm">সংবাদটি সফলভাবে ওয়েবসাইটে প্রকাশের পর আপনি স্বয়ংক্রিয়ভাবে সেটির প্রফেশনাল ফটো কার্ড এবং অন্যান্য বিশেষ ডিজিটাল সুবিধাগুলো দেখতে ও শেয়ার করতে পারবেন।</p>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <!-- FAQ SECTION -->
+                <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4 mb-6">
+                        <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">❓ প্রায় জিজ্ঞাসিত প্রশ্ন (FAQ)</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Q1 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">১. দৈনিক কয়টি সংবাদ প্রকাশ করা যাবে?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-indigo-500">
+                                <strong>উত্তর:</strong> একজন গণমাধ্যম কর্মী প্রতিদিন সর্বোচ্চ ২–৩টি সংবাদ প্রকাশ করতে পারবেন। প্রয়োজন অনুযায়ী কর্তৃপক্ষ যেকোনো সময় এই নীতিমালা পরিবর্তন বা পরিবর্ধন করতে পারে।
+                            </p>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">২. আমার অ্যাকাউন্ট এখনো ভেরিফাই হয়নি, করণীয় কী?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-emerald-500">
+                                <strong>উত্তর:</strong> চিন্তার কোনো কারণ নেই। সাধারণত আবেদন করার ২৪ থেকে ৭২ ঘণ্টার মধ্যে আপনার অ্যাকাউন্টটি আমাদের ব্যাকএন্ড সিস্টেম দ্বারা স্বয়ংক্রিয়ভাবে ভেরিফাই হয়ে যাবে। এরপর আপনি সংবাদ প্রকাশ করতে পারবেন।
+                            </p>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">৩. পাসওয়ার্ড ভুলে গেলে কী করবো?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-amber-500">
+                                <strong>উত্তর:</strong> ওয়েবসাইটের নিচে দেওয়া আমাদের অফিসিয়াল ই-মেইল ঠিকানায় আপনার নিবন্ধনের সম্পূর্ণ তথ্যসহ একটি ই-মেইল করুন। আমাদের টেকনিক্যাল টিম তথ্য যাচাই শেষে আপনাকে প্রয়োজনীয় পাসওয়ার্ড রিকভারি সহায়তা প্রদান করবে।
+                            </p>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">৪. কোনো সমস্যায় পড়লে কীভাবে দ্রুত সহযোগিতা পাব?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-purple-500">
+                                <strong>উত্তর:</strong> ওয়েবসাইটের নিচে দেওয়া অফিসিয়াল ই-মেইল ঠিকানায় আপনার সমস্যার বিস্তারিত বিবরণ লিখে পাঠান। আমাদের সাপোর্ট টিম যত দ্রুত সম্ভব বিষয়টি যাচাই করে আপনার সাথে যোগাযোগ করবে।
+                            </p>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">৫. WhatsApp-এ দ্রুত উত্তর পাওয়া যাচ্ছে না কেন?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-rose-500">
+                                <strong>উত্তর:</strong> আমাদের অফিশিয়াল WhatsApp নম্বরটি সরাসরি ওয়েবসাইটের সঙ্গে API-এর মাধ্যমে সংযুক্ত ছিল। নিরাপত্তাজনিত আপডেট, প্রযুক্তিগত সীমাবদ্ধতা এবং অতিরিক্ত বার্তার কারণে অ্যাকাউন্টটি সাময়িক স্থগিত রয়েছে। তাই যেকোনো গুরুত্বপূর্ণ জরুরি বিষয়ে অনুগ্রহ করে আমাদের অফিসিয়াল ই-মেইল ব্যবহার করুন।
+                            </p>
+                        </div>
+
+                        <!-- Q6 - IMPORTANT LEGAL LEGAL NOTICE -->
+                        <div class="border border-red-200 rounded-xl p-4 bg-red-50/50">
+                            <h5 class="font-bold text-red-950 text-sm md:text-base flex items-center gap-2">
+                                <i class="fa-solid fa-triangle-exclamation text-red-600"></i> ৬. সংবাদ সংগ্রহ করতে গিয়ে সমস্যায় পড়লে কী করণীয়?
+                            </h5>
+                            <div class="text-slate-700 text-sm mt-2 pl-4 border-l-2 border-red-600">
+                                <p class="font-bold text-red-700 mb-1">সতর্কবার্তা ও সুনির্দিষ্ট উত্তর:</p>
+                                না, মাঠে গিয়ে পরিচয়পত্র সরাসরি যেকোনো জায়গায় প্রদর্শন করা যাবে না। আপনাকে যে পরিচয়পত্রটি প্রদান করা হয়েছে তা মূলত স্বাধীন বাংলা প্রেস ক্লাবের একটি প্রাতিষ্ঠানিক "সদস্যপদ (Membership) কার্ড"। এটি শুধুমাত্র ক্লাবের অভ্যন্তরীণ ও প্রাতিষ্ঠানিক সুযোগ-সুবিধা ও পরিচিতির জন্য প্রযোজ্য। মাঠপর্যায়ে বা মূল ধারায় পেশাদার সাংবাদিকতা করার ক্ষেত্রে দেশের প্রচলিত আইন, সম্প্রচার নীতিমালা ও সংশ্লিষ্ট সরকারি কর্তৃপক্ষের সুনির্দিষ্ট গাইডলাইন কঠোরভাবে মেনে চলতে হবে।
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">৭. ভবিষ্যতে আপনাদের পরিকল্পনা কী?</h5>
+                            <p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-blue-500">
+                                <strong>উত্তর:</strong> আমরা খুব শীঘ্রই মূল ওয়েবসাইটে আমাদের প্রাতিষ্ঠানিক উদ্দেশ্য, লক্ষ্য, দীর্ঘমেয়াদী নীতিমালা, Privacy Policy, Terms & Conditions এবং অন্যান্য সর্বজনীন গুরুত্বপূর্ণ তথ্যসমূহ ডেভেলপ করে প্রকাশ করবো।
+                            </p>
+                        </div>
+
+                        <!-- Q8 - AI BOT DETAILS -->
+                        <div class="border border-slate-100 rounded-xl p-4 bg-slate-50/60">
+                            <h5 class="font-bold text-slate-800 text-sm md:text-base">৮. আমি কিছুই বুঝতে পারছি না। এখন আমি কী করবো?</h5>
+                            <div class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-teal-500 space-y-2">
+                                <p><strong>উত্তর:</strong> প্রথমে পৃষ্ঠার একদম উপরে থাকা সম্পূর্ণ ভিডিও টিউটোরিয়ালটি মনোযোগ দিয়ে দেখুন। এরপরও কোনো বিষয় বুঝতে অসুবিধা হলে ওয়েবসাইটে যুক্ত থাকা আমাদের <strong>AI (এআই) সহায়কের</strong> সাহায্য নিন।</p>
+                                <div class="bg-indigo-50/50 p-3 rounded-lg border border-indigo-100 text-xs text-indigo-950">
+                                    <i class="fa-solid fa-robot mr-1"></i> <strong>আমাদের এআই (AI) যেভাবে কাজ করবে:</strong> সিস্টেমে কেউ সমস্যায় পড়লে এআই স্বয়ংক্রিয়ভাবে ভিডিওটি ফুল স্ক্রিন করে চালু করে দিবে। এআই ভয়েসের মাধ্যমে আপনাকে জিজ্ঞেস করবে—<em>"ভাই, লগইন করতে কোন সমস্যা হচ্ছে? আর একবার ভালো করে দেখুন। আচ্ছা, এরপরও সমস্যা হলে ভিডিওটা মন দিয়ে পুনরায় দেখুন।"</em> 
+                                    একান্তই কিছু না বুঝলে এআই আপনাকে আপনার মোবাইল নম্বর ও সমস্যার কথা লিখে ইমেইল পাঠিয়ে দেওয়ার সরাসরি নির্দেশনা প্রদান করবে।
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <!-- LEGAL & ETHICAL GUIDELINES -->
-            <div class="bg-amber-50/60 border border-amber-200 rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-amber-900 mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-scale-balanced text-amber-700"></i> সাংবাদিকতার নীতিমালা
-                </h3>
-                <ul class="space-y-2.5 text-xs text-amber-950 font-medium">
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> সর্বদাই সঠিক ও সত্য তথ্যের ভিত্তিতে সংবাদ প্রকাশ করুন।</li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-rose-600 mt-0.5"></i> ভুয়া, বিভ্রান্তিকর বা কপিরাইট লঙ্ঘনকারী সংবাদ প্রকাশ থেকে বিরত থাকুন।</li>
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-exclamation text-amber-700 mt-0.5"></i> কর্তৃপক্ষ যে কোনো সময় নীতিমালার পরিপন্থী সংবাদ অপসারণের পূর্ণ অধিকার রাখে।</li>
-                </ul>
-            </div>
-
-            <!-- PREMIUM SUPPORT CONTACT CARD -->
-            <div class="bg-gradient-to-tr from-slate-950 via-slate-900 to-indigo-950 text-white rounded-2xl shadow-xl p-6 border-b-4 border-indigo-500">
-                <h3 class="text-lg font-bold mb-2 flex items-center gap-2">
-                    <i class="fa-solid fa-headset text-indigo-400"></i> আপনার কোনো সমস্যা হচ্ছে?
-                </h3>
-                <p class="text-slate-400 text-xs mb-4">কোনো কিছু বুঝতে না পারলে আপনার নাম, মোবাইল নম্বর এবং সমস্যার বিস্তারিত লিখে সরাসরি অফিশিয়াল ইমেইলে পাঠান।</p>
+            <!-- RIGHT COLUMN: RULES & PREMIUM CONTACT CARD -->
+            <div class="space-y-8">
                 
-                <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 mb-2 flex items-center gap-3">
-                    <div class="w-9 h-9 bg-indigo-500/20 text-indigo-400 rounded-lg flex items-center justify-center text-base">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="overflow-hidden">
-                        <span class="text-[10px] text-slate-400 block font-medium uppercase tracking-wider">অফিসিয়াল সাপোর্ট ইমেইল</span>
-                        <a href="mailto:customersuppor99@gmail.com" class="text-sm font-bold text-indigo-300 hover:underline block truncate">customersuppor99@gmail.com</a>
-                    </div>
+                <!-- ETHICAL GUIDELINES -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-6 shadow-sm">
+                    <h4 class="text-lg font-bold text-amber-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced text-amber-700"></i> ⚠️ গুরুত্বপূর্ণ নির্দেশনা
+                    </h4>
+                    <ul class="space-y-3 text-xs md:text-sm text-slate-700 font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                            <span>সর্বদা সঠিক ও সম্পূর্ণ সত্য তথ্যের ভিত্তিতে সংবাদ প্রকাশ করুন।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-xmark text-rose-600 mt-0.5"></i>
+                            <span>যেকোনো ধরনের ভুয়া, বিভ্রান্তিকর বা কপিরাইট লঙ্ঘনকারী সংবাদ প্রকাশ থেকে সম্পূর্ণ বিরত থাকুন।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-gavel text-amber-700 mt-0.5"></i>
+                            <span>সকল সংবাদ প্রকাশের ক্ষেত্রে সামগ্রিক সাংবাদিকতার নৈতিকতা ও দেশের প্রচলিত আইন কঠোরভাবে মেনে চলুন।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-shield-halved text-slate-700 mt-0.5"></i>
+                            <span>জনস্বার্থে বা প্রাতিষ্ঠানিক নিয়মে কর্তৃপক্ষ যেকোনো সংবাদ পর্যালোচনা, সম্পাদনা বা অপসারণের পূর্ণ অধিকার সংরক্ষণ করে।</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
 
+                <!-- OFFICAL HELPDESK & EMAIL SUPPORT -->
+                <div class="bg-gradient-to-tr from-slate-950 via-slate-900 to-indigo-950 text-white rounded-2xl shadow-xl p-6 border-b-4 border-indigo-500">
+                    <h4 class="text-lg font-bold mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-headset text-indigo-400"></i> কোনো টেকনিক্যাল সমস্যা?
+                    </h4>
+                    <p class="text-slate-400 text-xs mb-5 leading-relaxed">
+                        সংবাদ আপলোড করতে বা প্রতিনিধি অ্যাকাউন্ট ব্যবহার করতে কোনো ধরনের সমস্যা হলে, আপনার নিবন্ধিত নাম, মোবাইল নম্বর এবং সমস্যার বিস্তারিত তথ্যসহ সরাসরি অফিশিয়াল ইমেইলে যোগাযোগ করুন।
+                    </p>
+                    
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-4 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <span class="text-[10px] text-slate-500 block font-bold uppercase tracking-wider">অফিসিয়াল ইমেল ঠিকানা</span>
+                            <a href="mailto:customersuppor99@gmail.com" class="text-sm md:text-base font-bold text-indigo-300 hover:underline block truncate">customersuppor99@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <p class="text-[11px] text-center text-slate-400 font-medium">আমরা আপনাদের আন্তরিক সহযোগিতা ও দোয়া কামনা করছি।</p>
+                </div>
+
+            </div>
         </div>
     </main>
 
-    <!-- PREMIUM FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 text-center px-4">
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 text-center px-4 mt-12">
         <p class="mb-2">© 2026 জনতার অনলাইন প্রেসক্লাব পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
-        <p class="text-slate-500">ডিজাইন ও ডেভেলপমেন্ট: আন্তর্জাতিক মানের রেসপন্সিভ এডিশন</p>
+        <p class="text-slate-500">ডিজাইন কোড: আধুনিক, রেসপন্সিভ ও সম্পূর্ণ সুরক্ষিত এডিশন</p>
     </footer>
 
 </body>
-</html>
+    </html>
