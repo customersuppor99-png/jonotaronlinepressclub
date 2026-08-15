@@ -3,63 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>জনতার অনলাইন প্রেসক্লাব - ডেলিভারি তথ্য</title>
+    <title>জনতার অনলাইন প্রেসক্লাব - নতুন ওয়েবসাইট ও ডেলিভারি</title>
+    
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-out': 'fadeInOut 2s ease-in-out infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                    },
+                    keyframes: {
+                        fadeInOut: {
+                            '0%, 100%': { opacity: '0.5', transform: 'scale(0.98)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        body { font-family: 'Hind Siliguri', sans-serif; }
+        body {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .message-transition {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen flex items-center justify-center p-6">
+<body class="antialiased text-slate-800 min-h-screen flex items-center justify-center p-4">
 
-    <div id="main-card" class="bg-white max-w-lg w-full rounded-3xl shadow-xl p-8 text-center border border-slate-100">
-        <!-- কাউন্টডাউন ও মেসেজ সেকশন -->
-        <div id="display-area" class="space-y-6">
-            <div class="animate-pulse">
-                <div class="text-6xl mb-4">📦</div>
-                <h2 id="msg-title" class="text-2xl font-bold text-slate-800">অপেক্ষা করুন...</h2>
+    <main class="w-full max-w-2xl bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center border-t-8 border-blue-600 relative overflow-hidden">
+        
+        <!-- Decorative Background Circles -->
+        <div class="absolute -top-16 -right-16 w-32 h-32 bg-blue-100 rounded-full opacity-50 blur-2xl"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-green-100 rounded-full opacity-50 blur-2xl"></div>
+
+        <div class="relative z-10">
+            <!-- Header -->
+            <div class="mb-8">
+                <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide mb-4">
+                    জনতার অনলাইন প্রেসক্লাব
+                </span>
+                <h1 class="text-3xl font-bold text-slate-900 mb-2">নতুন উদ্যোগ • নতুন শক্তি</h1>
             </div>
-            
-            <div class="w-16 h-16 mx-auto rounded-full border-4 border-blue-100 border-t-blue-600 animate-spin"></div>
-            <p id="counter" class="text-4xl font-bold text-blue-600">8</p>
-            <p class="text-slate-500">সেকেন্ড পর আপনার ঠিকানা জমার ফর্মটি তৈরি হবে</p>
-        </div>
 
-        <!-- ফর্ম ওপেন হওয়ার বাটন (এটিই সবচেয়ে কার্যকর পদ্ধতি) -->
-        <div id="action-area" class="hidden animate-in fade-in zoom-in duration-500 space-y-6">
-            <div class="bg-green-50 p-6 rounded-2xl border border-green-200">
-                <h3 class="text-2xl font-bold text-green-700 leading-relaxed">
-                    আপনার আইডি কার্ড, টি-শার্ট সবকিছু পাঠানো হবে। অনুগ্রহ করে আপনার কুরিয়ারের ঠিকানা জমা দিন।
-                </h3>
+            <!-- Dynamic Message Area -->
+            <div class="h-28 flex items-center justify-center mb-8">
+                <p id="dynamic-message" class="text-xl md:text-2xl font-semibold text-blue-800 message-transition opacity-100">
+                    আপনার আইডি কার্ড, টি-শার্ট ও অন্যান্য ডকুমেন্ট প্রস্তুত করা হয়েছে...
+                </p>
             </div>
-            
-            <a href="https://forms.gle/aWYBxaV35vyamfVz7" target="_blank" onclick="window.location.reload();"
-               class="block w-full py-4 bg-blue-600 text-white font-bold text-lg rounded-xl hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
-               কুরিয়ারের ঠিকানা জমা দিন
-            </a>
-        </div>
-    </div>
 
+            <!-- Timer Section -->
+            <div id="countdown-wrapper" class="flex flex-col items-center justify-center space-y-4 mb-8">
+                <div class="relative w-28 h-28 flex items-center justify-center">
+                    <!-- Spinning Border -->
+                    <div class="absolute inset-0 rounded-full border-4 border-slate-100"></div>
+                    <div class="absolute inset-0 rounded-full border-4 border-blue-600 border-t-transparent animate-spin-slow"></div>
+                    <!-- Counter Text -->
+                    <span id="timerText" class="text-4xl font-bold text-slate-800">8</span>
+                </div>
+                <p class="text-slate-500 font-medium animate-pulse">
+                    অপেক্ষা করুন, ফর্মটি স্বয়ংক্রিয়ভাবে ওপেন হচ্ছে...
+                </p>
+            </div>
+
+            <!-- Fallback Button (In case of slow internet) -->
+            <div class="mt-4 border-t border-slate-100 pt-6">
+                <p class="text-sm text-slate-400 mb-3">যদি ফর্মটি নিজে থেকে ওপেন না হয়, তবে নিচের বাটনে ক্লিক করুন</p>
+                <a href="https://forms.gle/aWYBxaV35vyamfVz7" class="inline-flex items-center justify-center px-6 py-2.5 bg-slate-800 text-white font-medium rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                    কুরিয়ারের ঠিকানা জমা দিন
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Logic -->
     <script>
-        let timeLeft = 8;
-        const counterText = document.getElementById('counter');
-        const displayArea = document.getElementById('display-area');
-        const actionArea = document.getElementById('action-area');
-        const formUrl = "https://forms.gle/aWYBxaV35vyamfVz7";
+        document.addEventListener('DOMContentLoaded', () => {
+            let timeLeft = 8;
+            const timerElement = document.getElementById('timerText');
+            const dynamicMessage = document.getElementById('dynamic-message');
+            const formUrl = "https://forms.gle/aWYBxaV35vyamfVz7";
 
-        const timer = setInterval(() => {
-            timeLeft--;
-            counterText.innerText = timeLeft;
+            // Messages to display during the 8 seconds
+            const messages = [
+                "আপনার আইডি কার্ড, টি-শার্ট ও অন্যান্য ডকুমেন্ট প্রস্তুত করা হয়েছে...",
+                "ডকুমেন্টগুলো পাঠাতে আপনার সঠিক কুরিয়ার ঠিকানা জমা দিতে হবে...",
+                "আপনাদের জন্য সংবাদপত্রের সম্পূর্ণ নতুন ওয়েবসাইট প্রদান করা হবে...",
+                "এর মাধ্যমে সংবাদ প্রকাশসহ সকল বিষয় আরও আধুনিক ও প্রফেশনালভাবে পরিচালনা করা যাবে..."
+            ];
 
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                displayArea.classList.add('hidden');
-                actionArea.classList.remove('hidden');
-                
-                // বাটন ক্লিক করার ঝামেলা এড়াতে অটো ওপেন করার চেষ্টা (ব্রাউজার ব্লক করলে ইউজার ক্লিক করবে)
-                window.open(formUrl, '_blank');
-            }
-        }, 1000);
+            let messageIndex = 0;
+
+            // Change Message Every 2 Seconds
+            const messageInterval = setInterval(() => {
+                messageIndex++;
+                if (messageIndex < messages.length) {
+                    // Fade out
+                    dynamicMessage.style.opacity = '0';
+                    dynamicMessage.style.transform = 'translateY(10px)';
+                    
+                    setTimeout(() => {
+                        dynamicMessage.innerText = messages[messageIndex];
+                        // Fade in
+                        dynamicMessage.style.opacity = '1';
+                        dynamicMessage.style.transform = 'translateY(0)';
+                    }, 500); // Wait for fade out to complete
+                }
+            }, 2000); // 2000ms = 2 seconds
+
+            // Countdown Timer
+            const countdown = setInterval(() => {
+                timeLeft--;
+                timerElement.innerText = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdown);
+                    clearInterval(messageInterval);
+                    
+                    // ব্রাউজারে একই ট্যাবে ফর্মটি রিলোড হয়ে ওপেন হবে, তাই ব্লক হওয়ার কোনো সুযোগ নেই।
+                    window.location.href = formUrl;
+                }
+            }, 1000);
+        });
     </script>
 </body>
 </html>
