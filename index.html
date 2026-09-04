@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>জনতার অনলাইন প্রেস ক্লাব - জরুরি পোর্টাল আপডেট</title>
+    <title>জনতার অনলাইন প্রেস ক্লাব - অফিশিয়াল আপডেট ও নির্দেশনা</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts (Hind Siliguri) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,46 +14,45 @@
         body {
             font-family: 'Hind Siliguri', sans-serif;
         }
-        @keyframes floatSlow {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        @keyframes pulseGlow {
-            0%, 100% { opacity: 0.4; filter: blur(20px); }
-            50% { opacity: 0.8; filter: blur(30px); }
+        @keyframes floatEffect {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #090d16, #0f172a, #042f2e, #1e1b4b);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
         }
         .animate-float {
-            animation: floatSlow 4s ease-in-out infinite;
-        }
-        .animate-glow {
-            animation: pulseGlow 3s ease-in-out infinite;
+            animation: floatEffect 4s ease-in-out infinite;
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white relative overflow-x-hidden">
-
-    <!-- Background Dynamic Glowing Orbs (Laravel/Dashboard Ultra-Modern UI Style) -->
-    <div class="absolute top-10 left-1/4 w-96 h-96 bg-emerald-600/20 rounded-full animate-glow pointer-events-none"></div>
-    <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-red-600/15 rounded-full animate-glow pointer-events-none"></div>
+<body class="animated-bg text-slate-100 min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white relative overflow-x-hidden">
 
     <!-- Top Header / Navigation Bar -->
-    <header class="bg-slate-900/85 backdrop-blur-xl border-b border-slate-800 sticky top-0 z-50 shadow-2xl">
+    <header class="bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/80 sticky top-0 z-50 shadow-2xl">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="bg-gradient-to-tr from-emerald-600 to-teal-500 text-white p-2.5 rounded-2xl shadow-lg shadow-emerald-900/50 flex items-center justify-center animate-bounce">
-                    <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                <div class="bg-gradient-to-tr from-emerald-600 to-teal-500 text-white p-2.5 rounded-2xl shadow-lg shadow-emerald-950 flex items-center justify-center animate-pulse">
+                    <i data-lucide="newspaper" class="w-6 h-6"></i>
                 </div>
                 <div>
                     <h1 class="text-base md:text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
                         জনতার অনলাইন প্রেস ক্লাব 
-                        <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full border border-emerald-500/30">SECURE PORTAL</span>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full border border-emerald-500/30">OFFICIAL PORTAL</span>
                     </h1>
-                    <p class="text-xs text-slate-400">অটোমেটেড ডাটা মাইগ্রেশন ও ভেরিফিকেশন সিস্টেম</p>
+                    <p class="text-xs text-slate-400">প্রতিনিধি ব্যবস্থাপনা ও ডাটা আপডেট সিস্টেম</p>
                 </div>
             </div>
-            <div class="flex items-center space-x-2 bg-red-950/60 border border-red-500/40 text-red-400 px-3 py-1.5 rounded-full text-xs font-bold shadow-inner">
-                <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
-                <span>সিস্টেম অটো-ক্লোজ মোড</span>
+            <div class="hidden sm:flex items-center space-x-2 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 rounded-full text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>সিস্টেম লাইভ ও সক্রিয়</span>
             </div>
         </div>
     </header>
@@ -62,88 +61,76 @@
     <main class="max-w-3xl mx-auto px-4 py-8 md:py-12 flex-grow w-full z-10">
         
         <!-- Main Notice Card with Glassmorphism -->
-        <div class="bg-slate-900/90 border border-slate-800/80 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-2xl relative">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-2xl relative">
             
             <!-- Top Gradient Accent Line -->
-            <div class="h-1.5 w-full bg-gradient-to-r from-red-500 via-amber-500 to-emerald-500"></div>
+            <div class="h-1.5 w-full bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500"></div>
 
-            <!-- Card Header & Dynamic 5-Minute Loop Countdown Box -->
-            <div class="p-6 md:p-8 border-b border-slate-800/80 bg-gradient-to-b from-slate-900 to-slate-900/50">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                    <div class="flex items-center space-x-3">
-                        <div class="bg-red-500/10 border border-red-500/30 text-red-400 p-2.5 rounded-xl shadow-inner">
-                            <i data-lucide="timer" class="w-5 h-5 animate-spin"></i>
-                        </div>
-                        <div>
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">জরুরি ও চূড়ান্ত অ্যালার্ট</span>
-                        </div>
+            <!-- Card Header -->
+            <div class="p-6 md:p-8 border-b border-slate-800/80 bg-gradient-to-b from-slate-900 to-slate-950/50">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 p-2.5 rounded-xl shadow-inner">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
                     </div>
-
-                    <!-- 5 Minutes Looping Countdown Display -->
-                    <div class="bg-slate-950/80 border border-red-500/40 px-4 py-2 rounded-2xl flex items-center space-x-3 shadow-lg shadow-red-950/30 animate-pulse">
-                        <i data-lucide="clock" class="w-4 h-4 text-red-400"></i>
-                        <div class="text-xs text-slate-300 font-medium">
-                            অটো-ক্লোজ কাউন্টডাউন: <span id="countdown" class="font-black text-red-400 text-sm tracking-widest">০৫:০০</span>
-                        </div>
-                    </div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">জরুরি ও গুরুত্বপূর্ণ নির্দেশনা</span>
                 </div>
 
-                <h2 class="text-2xl md:text-3xl font-black text-white tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-                    সম্মানিত প্রতিনিধিবৃন্দ, অত্যন্ত জরুরি ঘোষণা!
+                <h2 class="text-2xl md:text-3xl font-black text-white tracking-tight">
+                    সম্মানিত প্রতিনিধিবৃন্দ,
                 </h2>
                 <p class="text-slate-300 text-sm md:text-base mt-3 leading-relaxed font-normal">
-                    আমাদের জনতার অনলাইন প্রেস ক্লাবের বর্তমান ওয়েবসাইটের সমস্ত গুরুত্বপূর্ণ ডাটা ও ফাইল নতুন সিকিউরড সার্ভারে সফলভাবে স্থানান্তর করা হয়েছে। নিরাপত্তা ও আপডেট প্রটোকলের কারণে এই পোর্টালটি প্রতি <span class="text-amber-400 font-bold">৫ মিনিট পর পর রিলোড</span> হয়ে নতুন সংস্করণে শিফট হচ্ছে। নির্ধারিত সময়ের মধ্যে দ্রুত কার্যক্রম সম্পন্ন করুন।
+                    আমাদের জনতার অনলাইন প্রেস ক্লাবের নতুন ও আধুনিক ওয়েবসাইটে আপনাদের সকলকে স্বাগতম। বর্তমান পোর্টালের সমস্ত কার্যক্রম ও ডাটা সফলভাবে নতুন সিস্টেমে স্থানান্তর করা হয়েছে। প্রতিনিধিদের সুবিধার জন্য নিচের নির্দেশনাগুলো গভীরভাবে অনুসরণ করার অনুরোধ করা হলো।
                 </p>
             </div>
 
-            <!-- Card Body / Interactive Feature Cards -->
+            <!-- Card Body / Structured Notice Sections -->
             <div class="p-6 md:p-8 space-y-6">
                 
-                <!-- Notice Info Boxes with Animations -->
+                <!-- Notice Info Boxes -->
                 <div class="space-y-4">
-                    <!-- Box 1 -->
+                    <!-- Box 1: For those who received parcels/documents -->
                     <div class="bg-emerald-950/30 border border-emerald-500/30 p-5 rounded-2xl flex items-start space-x-4 shadow-xl transition-all duration-300 hover:border-emerald-500/60 hover:bg-emerald-950/50 group animate-float">
                         <div class="bg-emerald-500/20 text-emerald-400 p-2.5 rounded-xl shrink-0 group-hover:scale-110 transition-transform">
                             <i data-lucide="check-circle-2" class="w-6 h-6"></i>
                         </div>
                         <div>
-                            <h3 class="text-emerald-400 font-bold text-base md:text-lg mb-1">ডকুমেন্ট ও পার্সেল গ্রহণকারীদের জন্য</h3>
+                            <h3 class="text-emerald-400 font-bold text-base md:text-lg mb-1">যাঁরা পার্সেল ও ডকুমেন্ট গ্রহণ করেছেন</h3>
                             <p class="text-sm md:text-base text-slate-300 leading-relaxed">
-                                যারা ইতিমধ্যে সফলভাবে তথ্য হালনাগাদ করেছেন এবং অফিশিয়াল পার্সেল ও প্রয়োজনীয় ডকুমেন্ট গ্রহণ করেছেন, তারা আর দেরি না করে অবিলম্বে <span class="text-emerald-400 font-semibold underline decoration-emerald-500/50">নতুন অ্যাপস ও ওয়েবসাইট</span> ব্যবহার করে আপনাদের নিয়মিত প্রেস ও মিডিয়া কার্যক্রম পরিচালনা করুন।
+                                যাঁহারা ইতিমধ্যে সফলভাবে তথ্য হালনাগাদ করেছেন এবং আমাদের পক্ষ থেকে পাঠানো অফিশিয়াল পার্সেল ও প্রয়োজনীয় ডকুমেন্ট গ্রহণ করেছেন, তাঁেদরকে বিনীতভাবে নির্দেশ দেওয়া হচ্ছে—এখন থেকে আপনারা সম্পূর্ণভাবে <span class="text-emerald-400 font-semibold underline decoration-emerald-500/50">নতুন ওয়েবসাইটটি</span> ব্যবহার করে আপনাদের নিয়মিত প্রেস ও মিডিয়া কার্যক্রম পরিচালনা করুন।
                             </p>
                         </div>
                     </div>
 
-                    <!-- Box 2 -->
+                    <!-- Box 2: For those who cancelled or haven't submitted info -->
                     <div class="bg-amber-950/30 border border-amber-500/30 p-5 rounded-2xl flex items-start space-x-4 shadow-xl transition-all duration-300 hover:border-amber-500/60 hover:bg-amber-950/50 group">
                         <div class="bg-amber-500/20 text-amber-400 p-2.5 rounded-xl shrink-0 group-hover:scale-110 transition-transform">
-                            <i data-lucide="alert-circle" class="w-6 h-6"></i>
+                            <i data-lucide="file-edit" class="w-6 h-6"></i>
                         </div>
                         <div>
-                            <h3 class="text-amber-400 font-bold text-base md:text-lg mb-1">বাকি থাকা ও তথ্য আপডেট না করাদের জন্য</h3>
+                            <h3 class="text-amber-400 font-bold text-base md:text-lg mb-1">যাঁরা তথ্য হালনাগাদ করেননি বা পার্সেল ক্যানসেল করেছেন</h3>
                             <p class="text-sm md:text-base text-slate-300 leading-relaxed">
-                                যারা এখনো পার্সেল বা ডকুমেন্ট গ্রহণ করেননি কিংবা তথ্য হালনাগাদ সম্পন্ন করেননি, তাদের অ্যাকাউন্ট সাময়িকভাবে ঝুঁকির মুখে রয়েছে। নিচের বাটনে ক্লিক করে দ্রুত অফিশিয়াল গুগল ফর্মের মাধ্যমে আপনাদের সঠিক তথ্য জমা দিয়ে অ্যাকাউন্ট সুরক্ষিত করে নিন।
+                                যাঁদের তথ্য এখনো হালনাগাদ করা হয়নি কিংবা পূর্বে পার্সেল ক্যানসেল করেছিলেন, তাঁরা অবিলম্বে নিচে দেওয়া লিংকের মাধ্যমে আপনাদের সঠিক তথ্য পুনরায় জমা দিন। তথ্য প্রাপ্তির পর আমাদের টিম আপনাদের সাথে যোগাযোগ করে প্রয়োজনীয় ব্যবস্থা গ্রহণ করবে।
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Live Auto-Redirect Notice Bar -->
-                <div class="bg-slate-950/60 border border-slate-800 p-3.5 rounded-xl text-center flex items-center justify-center space-x-2 text-xs text-slate-400">
-                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-                    <span>প্রতি ৩০ সেকেন্ড পর পর সিস্টেম স্বয়ংক্রিয়ভাবে গুগল ফর্ম পেজে রিডাইরেক্ট হবে।</span>
+                <!-- Auto Redirect Info Notice -->
+                <div class="bg-slate-950/80 border border-slate-800 p-4 rounded-xl text-center flex items-center justify-center space-x-2 text-xs text-slate-400 shadow-inner">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>নিরাপদ সংযোগের স্বার্থে কিছুক্ষণের মধ্যে পোর্টালটি স্বয়ংক্রিয়ভাবে গুগল ফর্মে রিডাইরেক্ট হবে।</span>
                 </div>
 
-                <!-- Call to Action Button (Google Form with Ultra Animation) -->
+                <!-- Call to Action Button (Google Form) -->
                 <div class="pt-2">
                     <button onclick="redirectToForm()" class="w-full group relative inline-flex items-center justify-center px-8 py-4.5 text-base md:text-lg font-black text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 rounded-2xl overflow-hidden shadow-2xl shadow-emerald-950 hover:from-emerald-500 hover:to-teal-500 transition-all duration-300 active:scale-[0.98] cursor-pointer border border-emerald-400/30">
                         <span class="absolute inset-0 w-full h-full bg-white/15 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                         <span class="flex items-center space-x-3 relative z-10">
-                            <span>তথ্য জমা দিন / এখনই হালনাগাদ করুন</span>
-                            <i data-lucide="arrow-right-circle" class="w-6 h-6 group-hover:translate-x-1.5 transition-transform"></i>
+                            <span>তথ্য জমা দিন / ফর্ম পূরণ করুন</span>
+                            <i data-lucide="external-link" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
                         </span>
                     </button>
-                    <p class="text-center text-xs text-slate-500 mt-2 font-mono">Secure Google Form Gateway • Instant Sync Active</p>
+                    <p class="text-center text-xs text-slate-500 mt-2 font-mono">Google Form Secure Gateway • Instant Auto-Sync</p>
                 </div>
 
             </div>
@@ -152,55 +139,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900/60 border-t border-slate-800/80 py-6 text-center text-xs text-slate-400 z-10 backdrop-blur-md">
-        <p>&copy; ২০২৬ জনতার অনলাইন প্রেস ক্লাব। সর্বস্বত্ব সংরক্ষিত। সিস্টেম আর্কিটেকচার ও ডেভলপমেন্ট পোর্টাল।</p>
+    <footer class="bg-slate-950/80 border-t border-slate-800/80 py-6 text-center text-xs text-slate-400 z-10 backdrop-blur-md">
+        <p>&copy; ২০২৬ জনতার অনলাইন প্রেস ক্লাব। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
-    <!-- JavaScript for 5-Minute Looping Timer, Animations, and 30-Second Auto-Redirect -->
+    <!-- JavaScript for Animations and Auto-Redirect to Google Form -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
 
-        // 5 Minutes Looping Countdown Logic
-        function startLoopCountdown() {
-            let totalTime = 5 * 60 * 1000; // 5 minutes in milliseconds
-            
-            if (!localStorage.getItem('portal_loop_start')) {
-                localStorage.setItem('portal_loop_start', new Date().getTime());
-            }
-
-            const timerInterval = setInterval(() => {
-                let now = new Date().getTime();
-                let startTime = parseInt(localStorage.getItem('portal_loop_start'));
-                let elapsed = (now - startTime) % totalTime;
-                let timeLeft = totalTime - elapsed;
-
-                let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-                let formattedTime = 
-                    (minutes < 10 ? "০" + minutes : minutes) + ":" +
-                    (seconds < 10 ? "০" + seconds : seconds);
-
-                // Convert numbers to Bengali representation for aesthetic appeal
-                const bengaliDigits = {'0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯'};
-                let bengaliTime = formattedTime.replace(/[0-9]/g, w => bengaliDigits[w]);
-
-                document.getElementById('countdown').innerHTML = bengaliTime;
-
-                // Reset timer loop seamlessly if it hits zero
-                if (timeLeft <= 1000) {
-                    localStorage.setItem('portal_loop_start', new Date().getTime());
-                }
-            }, 1000);
-        }
-
-        startLoopCountdown();
-
-        // Auto Redirect / Reload to Google Form every 30 seconds as requested
+        // Automatic redirect to Google Form after a short delay (e.g., 15 seconds)
         setTimeout(() => {
             redirectToForm();
-        }, 30000); // 30000 ms = 30 seconds
+        }, 15000); // 15000 ms = 15 seconds
 
         // Direct Redirect Function
         function redirectToForm() {
