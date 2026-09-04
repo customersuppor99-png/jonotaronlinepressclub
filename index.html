@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>জনতার অনলাইন প্রেস ক্লাব - অফিশিয়াল নির্দেশনা ও আপডেট</title>
+    <title>জনতার অনলাইন প্রেস ক্লাব - জরুরি নোটিশ ও আপডেট</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts (Inter & SolaimanLipi/Hind Siliguri) -->
+    <!-- Google Fonts (Hind Siliguri) -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -18,7 +18,7 @@
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
 
-    <!-- Top Header / Navigation Bar (Dashboard Style) -->
+    <!-- Top Header / Navigation Bar -->
     <header class="bg-slate-800/80 backdrop-blur-md border-b border-slate-700/60 sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -30,9 +30,9 @@
                     <p class="text-xs text-slate-400">প্রতিনিধি ব্যবস্থাপনা ও তথ্য হালনাগাদ পোর্টাল</p>
                 </div>
             </div>
-            <div class="hidden sm:flex items-center space-x-2 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 rounded-full text-xs font-medium">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>নতুন সংস্করণ সক্রিয়</span>
+            <div class="hidden sm:flex items-center space-x-2 bg-red-950/50 border border-red-500/30 text-red-400 px-3 py-1.5 rounded-full text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
+                <span>জরুরি পোর্টাল আপডেট</span>
             </div>
         </div>
     </header>
@@ -43,66 +43,59 @@
         <!-- Main Notice Card -->
         <div class="bg-slate-800 border border-slate-700/80 rounded-2xl shadow-2xl overflow-hidden">
             
-            <!-- Card Header -->
-            <div class="bg-gradient-to-r from-slate-800 via-slate-800 to-emerald-950/40 p-6 border-b border-slate-700/60">
-                <div class="flex items-center space-x-3 mb-2">
-                    <div class="bg-amber-500/10 border border-amber-500/20 text-amber-400 p-2 rounded-lg">
-                        <i data-lucide="alert-circle" class="w-5 h-5"></i>
+            <!-- Card Header & 24 Hours Countdown Box -->
+            <div class="bg-gradient-to-r from-slate-800 via-slate-800 to-red-950/30 p-6 md:p-8 border-b border-slate-700/60">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-red-500/10 border border-red-500/20 text-red-400 p-2 rounded-lg">
+                            <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-red-400 bg-red-400/10 px-3 py-1 rounded-md">জরুরি ও চূড়ান্ত নোটিশ</span>
                     </div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-md">জরুরি নির্দেশনা ও নোটিশ</span>
+
+                    <!-- 24 Hours Countdown Timer Display -->
+                    <div class="bg-slate-900/80 border border-red-500/30 px-4 py-2 rounded-xl flex items-center space-x-3 shadow-inner">
+                        <i data-lucide="clock" class="w-4 h-4 text-red-400 animate-spin"></i>
+                        <div class="text-xs text-slate-300">
+                            সময় বাকি: <span id="countdown" class="font-bold text-red-400 text-sm tracking-wider">২৪:০০:০০</span>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-xl md:text-2xl font-bold text-white mt-1">সম্মানিত প্রতিনিধিবৃন্দ,</h2>
-                <p class="text-slate-300 text-sm md:text-base mt-2 leading-relaxed">
-                    আমাদের জনতার অনলাইন প্রেস ক্লাবের বর্তমান ওয়েবসাইটের প্রয়োজনীয় সকল তথ্য ও ডাটা নতুন ওয়েবসাইটে স্থানান্তর করা হয়েছে। তাই এখন থেকে পূর্বের ওয়েবসাইটটি প্রতিনিধিদের কার্যক্রম ও সংবাদ প্রকাশের জন্য ব্যবহার করা হবে না। সকল প্রতিনিধিকে নতুন ওয়েবসাইট ব্যবহার করার জন্য অনুরোধ করা হচ্ছে।
+
+                <h2 class="text-xl md:text-2xl font-bold text-white mt-2">সম্মানিত প্রতিনিধিবৃন্দ,</h2>
+                <p class="text-slate-300 text-sm md:text-base mt-3 leading-relaxed">
+                    আমাদের জনতার অনলাইন প্রেস ক্লাবের বর্তমান ওয়েবসাইটের প্রয়োজনীয় সকল তথ্য ও ডাটা নতুন ওয়েবসাইটে স্থানান্তর করা হয়েছে। এই নতুন ওয়েবসাইটটি আগামী ২৪ ঘণ্টার মধ্যে স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যাবে, তাই সময় কাউন্টডাউন শুরু হয়ে গেছে।
                 </p>
             </div>
 
-            <!-- Card Body / Interactive Section -->
-            <div class="p-6 space-y-6">
+            <!-- Card Body / Direct Information & Instructions -->
+            <div class="p-6 md:p-8 space-y-6">
                 
-                <!-- Accordion Toggle Button -->
-                <div>
-                    <button onclick="toggleInstructions()" id="accordionBtn" class="w-full flex items-center justify-between bg-slate-700/50 hover:bg-slate-700 border border-slate-600/60 text-slate-200 px-5 py-3.5 rounded-xl transition-all duration-200 group font-medium text-left">
-                        <span class="flex items-center space-x-3">
-                            <i data-lucide="info" class="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform"></i>
-                            <span class="text-base text-white">নির্দেশনা দেখুন</span>
-                        </span>
-                        <i data-lucide="chevron-down" id="accordionIcon" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
-                    </button>
+                <!-- Notice Info Boxes -->
+                <div class="space-y-4">
+                    <!-- Box 1 -->
+                    <div class="bg-emerald-950/30 border border-emerald-500/30 p-4 rounded-xl flex items-start space-x-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 mt-0.5 shrink-0"></i>
+                        <p class="text-sm md:text-base text-slate-300">
+                            যারা ইতিমধ্যে তথ্য হালনাগাদ করেছেন এবং পার্সেল ও ডকুমেন্ট গ্রহণ করেছেন, তারা দ্রুত নতুন অ্যাপস বা ওয়েবসাইট ব্যবহার করুন এবং নিয়মিত কার্যক্রম পরিচালনা করুন।
+                        </p>
+                    </div>
 
-                    <!-- Accordion Content (Hidden by default) -->
-                    <div id="accordionContent" class="hidden mt-3 space-y-4 bg-slate-900/60 border border-slate-700/60 p-5 rounded-xl text-sm md:text-base text-slate-300 leading-relaxed transition-all">
-                        
-                        <!-- Block 1 -->
-                        <div class="border-b border-slate-800 pb-4">
-                            <h4 class="font-semibold text-emerald-400 mb-1.5 flex items-center space-x-2">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-                                <span>যারা তথ্য হালনাগাদ করেছেন এবং পার্সেল ও ডকুমেন্ট গ্রহণ করেছেন</span>
-                            </h4>
-                            <p class="text-slate-300 text-sm">
-                                যারা ইতোমধ্যে তাদের তথ্য হালনাগাদ করেছেন এবং আমাদের পক্ষ থেকে পাঠানো পার্সেল ও ডকুমেন্ট গ্রহণ করেছেন, তাদের নতুন ওয়েবসাইট ব্যবহার করার জন্য অনুরোধ করা হচ্ছে। আশা করছি, আপনারা ইতোমধ্যে নতুন ওয়েবসাইট ব্যবহার করছেন এবং নিয়মিত কার্যক্রম পরিচালনা করছেন। আপনাদের সহযোগিতার জন্য ধন্যবাদ।
-                            </p>
-                        </div>
-
-                        <!-- Block 2 -->
-                        <div>
-                            <h4 class="font-semibold text-amber-400 mb-1.5 flex items-center space-x-2">
-                                <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-400"></i>
-                                <span>যারা পার্সেল ক্যানসেল করেছেন অথবা এখনো তথ্য জমা দেননি</span>
-                            </h4>
-                            <p class="text-slate-300 text-sm">
-                                যারা পূর্বে পার্সেল ক্যানসেল করেছেন, যাদের তথ্য হালনাগাদ করা হয়নি অথবা যারা এখনো প্রয়োজনীয় তথ্য ও ডকুমেন্ট জমা দেননি, তারা চাইলে পুনরায় তথ্য সংশোধন ও জমা দেওয়ার সুযোগ পাবেন। সংশোধন বা তথ্য জমা দেওয়ার পর প্রয়োজন অনুযায়ী আমাদের প্রতিনিধিরা আপনাদের সঙ্গে যোগাযোগ করবেন।
-                            </p>
-                        </div>
+                    <!-- Box 2 -->
+                    <div class="bg-amber-950/30 border border-amber-500/30 p-4 rounded-xl flex items-start space-x-3">
+                        <i data-lucide="alert-circle" class="w-5 h-5 text-amber-400 mt-0.5 shrink-0"></i>
+                        <p class="text-sm md:text-base text-slate-300">
+                            যারা এখনো ডকুমেন্ট বা পার্সেল গ্রহণ করেননি কিংবা তথ্য হালনাগাদ করেননি, তারা দ্রুত আমাদের সাথে যোগাযোগ করে তথ্য হালনাগাদ করে নিন।
+                        </p>
                     </div>
                 </div>
 
-                <!-- Call to Action Button (Google Form with Auto Reload / Redirect) -->
-                <div class="pt-2">
+                <!-- Call to Action Button (Google Form with Auto Redirect) -->
+                <div class="pt-4">
                     <button onclick="redirectToForm()" class="w-full group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl overflow-hidden shadow-lg shadow-emerald-900/40 hover:from-emerald-500 hover:to-teal-500 transition-all duration-300 active:scale-[0.99] cursor-pointer">
                         <span class="absolute inset-0 w-full h-full bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                         <span class="flex items-center space-x-2">
-                            <span>তথ্য জমা দিন</span>
+                            <span>তথ্য জমা দিন / হালনাগাদ করুন</span>
                             <i data-lucide="external-link" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                         </span>
                     </button>
@@ -119,30 +112,50 @@
         <p>&copy; ২০২৬ জনতার অনলাইন প্রেস ক্লাব। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
-    <!-- JavaScript for Interactivity and Auto-Reload/Redirect -->
+    <!-- JavaScript for Countdown Timer and Redirect -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Accordion Toggle Function
-        function toggleInstructions() {
-            const content = document.getElementById('accordionContent');
-            const icon = document.getElementById('accordionIcon');
+        // 24 Hours Countdown Timer Logic
+        function startCountdown() {
+            // 24 hours in milliseconds
+            let totalTime = 24 * 60 * 60 * 1000; 
             
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
+            // Checking local storage so countdown persists across reloads for the same user session
+            if (!localStorage.getItem('timer_start')) {
+                localStorage.setItem('timer_start', new Date().getTime());
             }
+
+            const timerInterval = setInterval(() => {
+                let now = new Date().getTime();
+                let elapsed = now - parseInt(localStorage.getItem('timer_start'));
+                let timeLeft = totalTime - elapsed;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById('countdown').innerHTML = "সময় শেষ!";
+                } else {
+                    let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                    // Format with leading zeros
+                    let formattedTime = 
+                        (hours < 10 ? "0" + hours : hours) + ":" +
+                        (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                        (seconds < 10 ? "0" + seconds : seconds);
+
+                    document.getElementById('countdown').innerHTML = formattedTime;
+                }
+            }, 1000);
         }
+
+        startCountdown();
 
         // Auto Reload & Redirect Function for Google Form
         function redirectToForm() {
             const formUrl = "https://forms.gle/MR88Kov7Z3o764tk7";
-            
-            // Ensures a clean, instant reload/redirection cycle as requested
             window.location.replace(formUrl);
         }
     </script>
